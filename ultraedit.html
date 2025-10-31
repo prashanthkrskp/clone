@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltraEdit</title>
+    <style>
+        .maindiv {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbox {
+            width: 80%;
+            height: 9vh;
+            background-color: #ebe6e6;
+            margin: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            border: solid 1px rgb(84, 83, 83);
+            display: flex;
+            align-items: stretch;
+        }
+
+        img {
+            display: flex;
+            width: 150px;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .logo img {
+            max-height: 100%;
+            /* scale image to fit the inherited height */
+            width: auto;
+            display: block;
+        }
+
+        .logo {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list {
+            /* remove fixed height so it can inherit parent height */
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            /* optional: let .list take remaining horizontal space */
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 80px;
+            gap: 50px;
+
+        }
+
+        .download {
+            height: 100%;
+            /* inherit navbox height */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 16px;
+            /* remove big vertical padding */
+            gap: 16px;
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            background-color: rgb(255, 208, 0);
+            width: 120px;
+            height: 30px;
+            border-radius: 15px;
+            border: none;
+            padding: 20px;
+        }
+
+        .bdy {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 49px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maindiv">
+        <div class="navbox">
+            <div class="logo">
+                <img src="/UltrEdit clone web/UE_Site-Logo.png" alt="ULTRA EDIT">
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Products
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </li>
+                    <li>price
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </li>
+                    <li>resoures
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </li>
+                    <li>our company
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-down" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1" />
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="download">
+                <button>Download</button>
+                <h4>English</h4>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="bdy">
+        <h1>UltraEdit Tools & Free Trials</h1>
+    </div>
+</body>
+
+</html>
